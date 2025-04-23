@@ -1,0 +1,8 @@
+.cart-card img {
+    object-fit: cover;
+    height: 200px;
+  }
+  .container{
+    min-height: 50vh;
+  }
+  
