@@ -38,7 +38,7 @@ const Header = () => {
       animate={{ y: 0, opacity: 1 }}
       transition={{
         duration: 0.6,
-        ease: [0.25, 0.8, 0.25, 1], // smooth cubic bezier curve
+        ease: [0.25, 0.8, 0.25, 1], 
       }}
       className={` ${
         isScrolled ? "header-active" : "header"
@@ -76,8 +76,8 @@ const Header = () => {
         <div className="header-toggle-bar d-block d-md-none ">
           <AlignJustify onClick={() => setTogle(true)} />
           {togle && (
-            <div className="header-toggle-list d-flex justify-content-between d-block d-md-none  position-relative">
-              <ul className="list-unstyled m-0 d-flex flex-column gap-3  ">
+            <div className="header-toggle-list d-flex justify-content-center d-block d-md-none  position-relative z-1">
+              <ul className="list-unstyled m-0 d-flex flex-column gap-3 align-items-center justify-content-center z-1 ">
                 <li>
                   {" "}
                   <NavLink to={"/"} onClick={() => setTogle(false)}>

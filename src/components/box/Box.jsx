@@ -4,7 +4,7 @@ import "./Box.css";
 
 const Box = () => {
   return (
-    <div className="box-container d-flex justify-content-center flex-md-wrap">
+    <div className="box-container d-flex justify-content-center flex-wrap">
       {boximage.map((item, index) => {
         return (
           <div className="box d-flex" key={index}>
